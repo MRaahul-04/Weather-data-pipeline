@@ -1,0 +1,11 @@
+# python -m streamlit run src/dashboard.py
+
+requests
+python-dotenv
+certifi
+schedule
+pandas
+pandas-stubs
+streamlit
+django-scheduler
+pyyaml

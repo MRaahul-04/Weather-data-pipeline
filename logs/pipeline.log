@@ -1,0 +1,111 @@
+2026-02-14 18:16:09,653 | INFO | weather-pipeline | Scheduler started
+2026-02-14 18:16:09,654 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 18:16:09,658 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 18:16:10,181 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 18:16:10,545 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 18:16:10,984 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 18:16:11,365 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 18:16:11,706 | INFO | weather-pipeline | Pipeline run 1 completed successfully
+2026-02-14 18:16:11,706 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 20:16:17,904 | INFO | weather-pipeline | Scheduler started
+2026-02-14 20:16:17,904 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 20:16:17,916 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 20:16:18,183 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 20:16:18,376 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 20:16:18,562 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 20:16:18,764 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 20:16:18,957 | INFO | weather-pipeline | Pipeline run 2 completed successfully
+2026-02-14 20:16:18,957 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 20:19:27,667 | INFO | weather-pipeline | Scheduler started
+2026-02-14 20:19:27,668 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 20:19:27,676 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 20:19:27,872 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 20:19:28,053 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 20:19:28,241 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 20:19:28,428 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 20:19:28,622 | INFO | weather-pipeline | Pipeline run 3 completed successfully
+2026-02-14 20:19:28,623 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 20:26:26,825 | INFO | weather-pipeline | Scheduler started
+2026-02-14 20:26:26,825 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 20:26:26,837 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 20:26:27,062 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 20:26:27,258 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 20:26:27,458 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 20:26:27,647 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 20:26:27,848 | INFO | weather-pipeline | Pipeline run 4 completed successfully
+2026-02-14 20:26:27,848 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 20:29:17,336 | INFO | weather-pipeline | Scheduler started
+2026-02-14 20:29:17,336 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 20:29:17,359 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 20:29:17,584 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 20:29:17,797 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 20:29:17,990 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 20:29:18,175 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 20:29:18,364 | INFO | weather-pipeline | Pipeline run 5 completed successfully
+2026-02-14 20:29:18,364 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 20:38:06,274 | INFO | weather-pipeline | Scheduler started
+2026-02-14 20:38:06,275 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 20:38:06,298 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 20:38:06,527 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 20:38:06,708 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 20:38:07,067 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 20:38:07,248 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 20:38:07,442 | INFO | weather-pipeline | Pipeline run 6 completed successfully
+2026-02-14 20:38:07,442 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 20:38:52,568 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 20:38:52,843 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 20:38:53,027 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 20:38:53,209 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 20:38:53,415 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 20:38:53,594 | INFO | weather-pipeline | Pipeline run 7 completed successfully
+2026-02-14 21:38:07,452 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 21:38:07,466 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 21:38:07,796 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 21:38:08,014 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 21:38:08,242 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 21:38:08,449 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 21:38:08,676 | INFO | weather-pipeline | Pipeline run 8 completed successfully
+2026-02-14 21:38:08,676 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 22:29:40,735 | INFO | weather-pipeline | Scheduler started
+2026-02-14 22:29:40,735 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 22:38:08,689 | INFO | weather-pipeline | Scheduled ETL job started
+2026-02-14 22:38:08,698 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 22:38:08,967 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 22:38:09,151 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 22:38:09,368 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 22:38:09,592 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 22:38:09,812 | INFO | weather-pipeline | Pipeline run 9 completed successfully
+2026-02-14 22:38:09,812 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 22:39:56,109 | INFO | weather-pipeline | Scheduler started
+2026-02-14 22:39:56,111 | INFO | weather-pipeline | Running ETL for 9 cities
+2026-02-14 22:39:56,121 | INFO | weather-pipeline | Processing city: Ahmedabad
+2026-02-14 22:39:56,358 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 22:39:56,545 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 22:39:56,721 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 22:39:56,903 | INFO | weather-pipeline | Processing city: Hyderabad
+2026-02-14 22:39:57,090 | INFO | weather-pipeline | Processing city: Jaipur
+2026-02-14 22:39:57,283 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 22:39:57,458 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 22:39:57,645 | INFO | weather-pipeline | Processing city: Pune
+2026-02-14 22:39:57,858 | INFO | weather-pipeline | Pipeline run 10 completed successfully
+2026-02-14 22:39:57,858 | INFO | weather-pipeline | Scheduled ETL job finished
+2026-02-14 22:50:28,960 | INFO | weather-pipeline | Processing city: Ahmedabad
+2026-02-14 22:50:29,231 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 22:50:29,419 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 22:50:29,594 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 22:50:29,777 | INFO | weather-pipeline | Processing city: Hyderabad
+2026-02-14 22:50:29,972 | INFO | weather-pipeline | Processing city: Jaipur
+2026-02-14 22:50:30,163 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 22:50:30,350 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 22:50:30,524 | INFO | weather-pipeline | Processing city: Pune
+2026-02-14 22:50:30,712 | INFO | weather-pipeline | Pipeline run 11 completed successfully
+2026-02-14 22:50:49,428 | INFO | weather-pipeline | Processing city: Ahmedabad
+2026-02-14 22:50:49,616 | INFO | weather-pipeline | Processing city: Bangalore
+2026-02-14 22:50:49,854 | INFO | weather-pipeline | Processing city: Chennai
+2026-02-14 22:50:50,015 | INFO | weather-pipeline | Processing city: Delhi
+2026-02-14 22:50:50,183 | INFO | weather-pipeline | Processing city: Hyderabad
+2026-02-14 22:50:50,350 | INFO | weather-pipeline | Processing city: Jaipur
+2026-02-14 22:50:50,540 | INFO | weather-pipeline | Processing city: Kolkata
+2026-02-14 22:50:50,723 | INFO | weather-pipeline | Processing city: Mumbai
+2026-02-14 22:50:50,907 | INFO | weather-pipeline | Processing city: Pune
+2026-02-14 22:50:51,091 | INFO | weather-pipeline | Pipeline run 12 completed successfully
