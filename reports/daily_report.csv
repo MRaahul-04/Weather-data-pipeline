@@ -1,0 +1,10 @@
+city,temperature,humidity,condition,time
+Ahmedabad,25.02,38,smoke,2026-02-18 14:44:04.929754
+Bangalore,24.72,43,few clouds,2026-02-18 14:44:05.113835
+Chennai,26.6,71,scattered clouds,2026-02-18 14:44:05.295098
+Delhi,17.05,77,mist,2026-02-18 14:44:05.473388
+Hyderabad,25.23,53,haze,2026-02-18 14:44:05.689560
+Jaipur,15.62,88,broken clouds,2026-02-18 14:44:05.881497
+Kolkata,24.97,33,haze,2026-02-18 14:44:06.107756
+Mumbai,24.99,69,haze,2026-02-18 14:44:06.343328
+Pune,27.3,37,few clouds,2026-02-18 14:44:06.556009
