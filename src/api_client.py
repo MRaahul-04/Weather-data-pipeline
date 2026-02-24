@@ -10,16 +10,19 @@ warnings.filterwarnings("ignore")
 load_dotenv()
 
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
+
+if not API_KEY:
+    raise RuntimeError(
+        "OPENWEATHER_API_KEY is missing.\n"
+        "Set it using:\n"
+        "  export OPENWEATHER_API_KEY=your_key   (Git Bash)\n"
+        "  setx OPENWEATHER_API_KEY your_key     (PowerShell)"
+    )
+
 TIMEOUT = int(os.getenv("API_TIMEOUT", 10))
 RETRIES = int(os.getenv("API_RETRIES", 3))
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-
-if not os.getenv("OPENWEATHER_API_KEY"):
-    raise RuntimeError(
-        "OPENWEATHER_API_KEY is not set. "
-        "Please export it before running the pipeline."
-    )
 
 class WeatherAPIClient:
     def __init__(self):
