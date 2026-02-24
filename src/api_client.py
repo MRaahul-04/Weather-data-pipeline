@@ -15,6 +15,12 @@ RETRIES = int(os.getenv("API_RETRIES", 3))
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
+if not os.getenv("OPENWEATHER_API_KEY"):
+    raise RuntimeError(
+        "OPENWEATHER_API_KEY is not set. "
+        "Please export it before running the pipeline."
+    )
+
 class WeatherAPIClient:
     def __init__(self):
         if not API_KEY:

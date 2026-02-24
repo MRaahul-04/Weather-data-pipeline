@@ -44,6 +44,30 @@ def info(msg):
 # =================================================
 # PROCESS HELPERS
 # =================================================
+def city_geo_missing():
+    """
+    Returns True if any city is missing geo metadata.
+    """
+    import sqlite3
+
+    conn = sqlite3.connect(DB_PATH)
+    cur = conn.cursor()
+
+    cur.execute("""
+        SELECT COUNT(*)
+        FROM cities
+        WHERE country IS NULL
+           OR latitude IS NULL
+           OR longitude IS NULL
+    """)
+
+    missing = cur.fetchone()[0]
+    conn.close()
+    return missing > 0
+
+def api_key_available():
+    return bool(os.getenv("OPENWEATHER_API_KEY"))
+
 def start_background(cmd, label):
     step(label)
 
@@ -126,6 +150,25 @@ if __name__ == "__main__":
                 [PYTHON, SCRIPTS_DIR / "init_db.py"],
                 "Initializing database",
             )
+
+        # -----------------------------
+        # CITY GEO ENRICHMENT (SAFE)
+        # -----------------------------
+        print("\n======="
+                "🌍 CITY GEO ENRICHMENT"
+                "========")
+
+        if city_geo_missing():
+            if api_key_available():
+                run_once(
+                    [PYTHON, SCRIPTS_DIR / "backfill_city_geo.py"],
+                    "Enriching city geo metadata",
+                )
+            else:
+                info("City geo data missing but OPENWEATHER_API_KEY not set")
+                info("Skipping geo enrichment (run backfill_city_geo.py later)")
+        else:
+            done("All city geo metadata already present")
 
         # -----------------------------
         # ETL PIPELINE

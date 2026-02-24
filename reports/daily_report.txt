@@ -4,25 +4,33 @@ WEATHER DATA PIPELINE SYSTEM
 📊 SYSTEM STATUS
 ----------------
 Status: SUCCESS
-Last Run Start: 24 Feb 2026, 09:42 PM IST
-Last Run End: 24 Feb 2026, 09:42 PM IST
+Last Run Start: 24 Feb 2026, 11:05 PM IST
+Last Run End: 24 Feb 2026, 11:05 PM IST
 Records Processed: 9
 Last Error: None
 
 🌤️ CURRENT WEATHER SNAPSHOT
 ----------------------------
-📍 Ahmedabad: 28.49°C, 22% humidity, overcast clouds
-📍 Bangalore: 23.77°C, 55% humidity, broken clouds
-📍 Chennai: 26.07°C, 81% humidity, few clouds
-📍 Delhi: 24.27°C, 20% humidity, clear sky
-📍 Hyderabad: 25.28°C, 53% humidity, overcast clouds
-📍 Jaipur: 20.43°C, 29% humidity, clear sky
-📍 Kolkata: 24.7°C, 51% humidity, scattered clouds
-📍 Mumbai: 26.36°C, 71% humidity, broken clouds
-📍 Pune: 24.73°C, 38% humidity, scattered clouds
+📍 Ahmedabad: 27.33°C, 23% humidity, broken clouds
+📍 Bangalore: 22.73°C, 60% humidity, overcast clouds
+📍 Chennai: 25.96°C, 83% humidity, few clouds
+📍 Delhi: 23.69°C, 21% humidity, clear sky
+📍 Hyderabad: 24.99°C, 51% humidity, overcast clouds
+📍 Jaipur: 20.22°C, 28% humidity, clear sky
+📍 Kolkata: 23.65°C, 58% humidity, light rain
+📍 Mumbai: 26.08°C, 70% humidity, scattered clouds
+📍 Pune: 23.87°C, 41% humidity, scattered clouds
 
 📅 TODAY'S ALERTS
 -----------------
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
 • HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
 • HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
 • HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
@@ -30,15 +38,15 @@ Last Error: None
 
 📊 DATABASE STATISTICS
 ---------------------
-Total Records: 36
+Total Records: 108
 Cities Tracked: 9
-Average Temperature: 24.9 °C
+Average Temperature: 24.56 °C
 
 🔥 HOTTEST CITY (LONG-TERM)
 --------------------------
 City: Ahmedabad
-Average Temperature: 28.49 °C
+Average Temperature: 27.81 °C
 
 ⏰ REPORT GENERATED AT
 ---------------------
-24 Feb 2026, 09:42 PM IST
+24 Feb 2026, 11:05 PM IST
