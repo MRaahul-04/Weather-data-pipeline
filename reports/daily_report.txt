@@ -4,39 +4,41 @@ WEATHER DATA PIPELINE SYSTEM
 📊 SYSTEM STATUS
 ----------------
 Status: SUCCESS
-Last Run Start: 18 Feb 2026, 08:14 PM IST
-Last Run End: 18 Feb 2026, 08:14 PM IST
+Last Run Start: 24 Feb 2026, 09:42 PM IST
+Last Run End: 24 Feb 2026, 09:42 PM IST
 Records Processed: 9
 Last Error: None
 
 🌤️ CURRENT WEATHER SNAPSHOT
 ----------------------------
-📍 Ahmedabad: 25.02°C, 38% humidity, smoke
-📍 Bangalore: 24.72°C, 43% humidity, few clouds
-📍 Chennai: 26.6°C, 71% humidity, scattered clouds
-📍 Delhi: 17.05°C, 77% humidity, mist
-📍 Hyderabad: 25.23°C, 53% humidity, haze
-📍 Jaipur: 15.62°C, 88% humidity, broken clouds
-📍 Kolkata: 24.97°C, 33% humidity, haze
-📍 Mumbai: 24.99°C, 69% humidity, haze
-📍 Pune: 27.3°C, 37% humidity, few clouds
+📍 Ahmedabad: 28.49°C, 22% humidity, overcast clouds
+📍 Bangalore: 23.77°C, 55% humidity, broken clouds
+📍 Chennai: 26.07°C, 81% humidity, few clouds
+📍 Delhi: 24.27°C, 20% humidity, clear sky
+📍 Hyderabad: 25.28°C, 53% humidity, overcast clouds
+📍 Jaipur: 20.43°C, 29% humidity, clear sky
+📍 Kolkata: 24.7°C, 51% humidity, scattered clouds
+📍 Mumbai: 26.36°C, 71% humidity, broken clouds
+📍 Pune: 24.73°C, 38% humidity, scattered clouds
 
 📅 TODAY'S ALERTS
 -----------------
-• HIGH_HUMIDITY alert: Jaipur (88.0 > 75.0)
-• HIGH_HUMIDITY alert: Delhi (77.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
+• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
 
 📊 DATABASE STATISTICS
 ---------------------
-Total Records: 261
+Total Records: 36
 Cities Tracked: 9
-Average Temperature: 24.85 °C
+Average Temperature: 24.9 °C
 
 🔥 HOTTEST CITY (LONG-TERM)
 --------------------------
-City: Mumbai
-Average Temperature: 30.11 °C
+City: Ahmedabad
+Average Temperature: 28.49 °C
 
 ⏰ REPORT GENERATED AT
 ---------------------
-18 Feb 2026, 08:48 PM IST
+24 Feb 2026, 09:42 PM IST

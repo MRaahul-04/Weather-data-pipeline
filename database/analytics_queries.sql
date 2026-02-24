@@ -98,3 +98,18 @@ FROM weather_data;
    ============================================================ */
 DELETE FROM pipeline_runs;
 DELETE FROM sqlite_sequence WHERE name='pipeline_runs';
+
+/* ============================================================
+   If you want to reset the previous data
+   ============================================================ */
+
+PRAGMA foreign_keys = OFF;
+
+DELETE FROM alerts;
+DELETE FROM weather_data;
+DELETE FROM pipeline_runs;
+DELETE FROM cities;
+
+DELETE FROM sqlite_sequence;
+
+PRAGMA foreign_keys = ON;

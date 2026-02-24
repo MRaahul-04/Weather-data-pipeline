@@ -120,3 +120,7 @@ def generate_daily_csv():
         writer.writerows(snapshot)
 
     return csv_path
+
+
+if __name__ == "__main__":
+    generate_daily_report()

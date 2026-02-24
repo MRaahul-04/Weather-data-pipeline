@@ -5,8 +5,17 @@ if __name__ == "__main__":
     pipeline = WeatherETLPipeline()
 
     city_map = get_city_map()
-    if not city_map:
-        raise RuntimeError("❌ No cities found in database")
+    CITIES = [
+        "Mumbai",
+        "Delhi",
+        "Bangalore",
+        "Chennai",
+        "Kolkata",
+        "Hyderabad",
+        "Pune",
+        "Ahmedabad",
+        "Jaipur",
+    ]
 
-    pipeline.run(city_map)
+    pipeline.run(CITIES)
     print("✅ ETL Pipeline execution completed")
