@@ -1,4 +1,4 @@
-# Run using - [ python -c "from src.reporter import generate_daily_report, generate_daily_csv; print(generate_daily_report()); print(generate_daily_csv()) ]
+# Script to generate daily text and CSV reports from analytics queries.
 
 import csv
 from datetime import datetime, timezone
@@ -12,15 +12,18 @@ from src.analytics import (
     highest_avg_temperature
 )
 
+# Resolve the project root directory and define report output directory
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 REPORT_DIR = PROJECT_ROOT / "reports"
 REPORT_DIR.mkdir(exist_ok=True)
 
+# Timezone used for all report timestamps
 IST = ZoneInfo("Asia/Kolkata")
 
 def format_ist(dt):
     """
     Convert datetime or datetime string to IST and format for reports.
+    Formats timestamps into IST timezone for human-readable report output.
     """
     if not dt:
         return "N/A"
@@ -39,15 +42,18 @@ def format_ist(dt):
     ist_time = dt.astimezone(IST)
     return ist_time.strftime("%d %b %Y, %I:%M %p IST")
 
+# Orchestrate analytics queries and write the daily TXT + CSV reports
 def generate_daily_report():
     now = datetime.now(timezone.utc)
 
+    # Fetch analytics data: pipeline status, weather snapshot, alerts, stats, hottest city
     pipeline = latest_pipeline_run()
     snapshot = latest_weather_snapshot()
     alerts = alert_summary()
     stats = database_statistics()
     hottest_city, hottest_temp = highest_avg_temperature()
 
+    # Build the report string with system status, weather snapshot, alerts, stats, and hottest city
     report = f"""
 WEATHER DATA PIPELINE SYSTEM
 ============================
@@ -99,14 +105,16 @@ Average Temperature: {hottest_temp} °C
 {format_ist(now)}
 """
 
+    # Write the TXT report to file
     report_path = REPORT_DIR / "daily_report.txt"
     report_path.write_text(report.strip(), encoding="utf-8")
 
-    # Generate CSV automatically
+    # Generate CSV report automatically and get its path
     csv_path = generate_daily_csv()
 
     return report_path, csv_path
 
+# Export the latest weather snapshot to CSV format
 def generate_daily_csv():
     snapshot = latest_weather_snapshot()
     csv_path = REPORT_DIR / "daily_report.csv"
@@ -122,5 +130,6 @@ def generate_daily_csv():
     return csv_path
 
 
+# Allow manual execution of report generation when run as a script
 if __name__ == "__main__":
     generate_daily_report()

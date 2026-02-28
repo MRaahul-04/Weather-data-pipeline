@@ -1,3 +1,7 @@
+# This script orchestrates the full Weather Data Pipeline system lifecycle,
+# managing database initialization, data enrichment, ETL pipeline execution,
+# scheduling, reporting, and launching the Streamlit dashboard.
+
 import subprocess
 import sys
 import time
@@ -6,6 +10,7 @@ import os
 
 # =================================================
 # PATHS & CONSTANTS
+# Define key paths and constants used throughout the pipeline
 # =================================================
 PROJECT_ROOT = Path(__file__).resolve().parent
 PYTHON = sys.executable
@@ -19,34 +24,41 @@ background_processes = []
 
 # =================================================
 # CLI HELPERS
+# Helper functions for printing formatted CLI output
 # =================================================
 def banner(title):
+    """Prints formatted CLI section headers."""
     print("\n" + "=" * 70)
     print(title)
     print("=" * 70 + "\n")
 
 
 def step(msg):
+    """Prints step-in-progress messages."""
     print(f"▶ {msg}")
     sys.stdout.flush()
 
 
 def done(msg):
+    """Prints successful completion messages."""
     print(f"✔ {msg}")
     sys.stdout.flush()
 
 
 def info(msg):
+    """Prints informational messages."""
     print(f"ℹ {msg}")
     sys.stdout.flush()
 
 
 # =================================================
 # PROCESS HELPERS
+# Functions to check data status and manage subprocesses
 # =================================================
 def city_geo_missing():
     """
-    Returns True if any city is missing geo metadata.
+    Checks if city geo metadata is incomplete.
+    Returns True if any city is missing country, latitude, or longitude info.
     """
     import sqlite3
 
@@ -66,9 +78,18 @@ def city_geo_missing():
     return missing > 0
 
 def api_key_available():
+    """Checks if the OPENWEATHER_API_KEY environment variable is set."""
     return bool(os.getenv("OPENWEATHER_API_KEY"))
 
 def start_background(cmd, label):
+    """
+    Launches long-running background services as subprocesses.
+    Args:
+        cmd: List of command arguments to run.
+        label: Descriptive label for the service.
+    Returns:
+        The subprocess.Popen object for the started process.
+    """
     step(label)
 
     env = os.environ.copy()
@@ -88,6 +109,12 @@ def start_background(cmd, label):
 
 
 def run_once(cmd, label):
+    """
+    Executes one-time scripts synchronously, displaying progress.
+    Args:
+        cmd: List of command arguments to run.
+        label: Descriptive label for the task.
+    """
     step(label)
 
     env = os.environ.copy()
@@ -105,6 +132,14 @@ def run_once(cmd, label):
 
 
 def shutdown():
+    """
+    Gracefully terminates all background services and exits the program.
+    """
+
+    print("=" * 60)
+    print("🔚 DASHBOARD STOPPED")
+    print("=" * 60)
+
     print("\n" + "=" * 60)
     print("🛑 SHUTTING DOWN WEATHER DATA PIPELINE SYSTEM")
     print("=" * 60 + "\n")
@@ -124,14 +159,11 @@ def shutdown():
     print("✔ All background services stopped")
     print("✔ System stopped safely.\n")
 
-    print("=" * 60)
-    print("🔚 DASHBOARD STOPPED")
-    print("=" * 60)
-
     sys.exit(0)
 
 # =================================================
 # MAIN ORCHESTRATION
+# Coordinates the full pipeline run and dashboard lifecycle
 # =================================================
 if __name__ == "__main__":
     try:
@@ -139,6 +171,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # DATABASE CHECK
+        # Validate presence of database or initialize if missing
         # -----------------------------
         print("▶ 🗄 DATABASE"
               "\n------------------------")
@@ -152,6 +185,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # CITY GEO ENRICHMENT (SAFE)
+        # Determine if geo enrichment is needed and if API key is available
         # -----------------------------
         print("\n🌍 CITY GEO ENRICHMENT"
               "\n------------------------")
@@ -170,6 +204,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # ETL PIPELINE
+        # Run the initial ETL pipeline to populate weather data
         # -----------------------------
         print("\n🔄 ETL PIPELINE"
               "\n------------------------")
@@ -180,6 +215,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # SCHEDULER
+        # Start the scheduler service to automate periodic data updates
         # -----------------------------
         print("\n⏱ SCHEDULER"
               "\n------------------------")
@@ -190,6 +226,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # REPORTING
+        # Generate daily reports based on collected data
         # -----------------------------
         print("\n📄 REPORTING"
               "\n------------------------")
@@ -200,6 +237,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # DASHBOARD
+        # Launch the Streamlit dashboard for interactive data visualization
         # -----------------------------
         banner("🌐 STREAMLIT DASHBOARD")
         info("🔄Launching Streamlit dashboard")
@@ -222,6 +260,7 @@ if __name__ == "__main__":
 
         # -----------------------------
         # POST-DASHBOARD
+        # Prompt user to shut down background services after dashboard exit
         # -----------------------------
         banner("🔚 DASHBOARD STOPPED")
 

@@ -1,7 +1,11 @@
+# Unit tests for weather data validation logic
+
 import pytest
 from src.validators import validate_weather_data
 
+# Mark the following tests as unit tests
 @pytest.mark.unit
+# Test that valid weather data passes validation
 def test_weather_validation_success():
     sample = {
         "temperature_c": 25.0,
@@ -13,7 +17,9 @@ def test_weather_validation_success():
     }
     assert validate_weather_data(sample) is True
 
+# Mark the following tests as unit tests
 @pytest.mark.unit
+# Test that invalid weather data fails validation
 def test_weather_validation_failure():
     bad_sample = {
         "temperature_c": None,

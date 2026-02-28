@@ -9,3 +9,4 @@ django-scheduler
 pyyaml
 altair
 pytest
+psutil

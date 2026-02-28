@@ -1,30 +1,15 @@
-# from datetime import datetime
-#
-# def validate_weather_data(weather: dict) -> bool:
-#     if weather is None:
-#         return False
-#
-#     if not (-90 <= weather["temperature_c"] <= 60):
-#         return False
-#
-#     if not (0 <= weather["humidity"] <= 100):
-#         return False
-#
-#     if weather["pressure_hpa"] <= 0:
-#         return False
-#
-#     if weather["wind_speed_mps"] < 0:
-#         return False
-#
-#     if not isinstance(weather["observation_time"], datetime):
-#         return False
-#
-#     return True
+# This module validates incoming weather data before storage.
 
 def validate_weather_data(weather: dict) -> bool:
+    """Validate the structure and values of weather data dictionary.
+
+    Returns True if all required fields are present and valid, else False.
+    """
+    # Ensure the input is a dictionary
     if not isinstance(weather, dict):
         return False
 
+    # Define required keys to be present in the weather data
     required_keys = [
         "temperature_c",
         "humidity",
@@ -34,10 +19,12 @@ def validate_weather_data(weather: dict) -> bool:
         "observation_time",
     ]
 
+    # Check for any missing or None values in required fields
     for key in required_keys:
         if key not in weather or weather[key] is None:
             return False
 
+    # Attempt to cast fields to expected types to validate format
     try:
         temp = float(weather["temperature_c"])
         humidity = int(weather["humidity"])
@@ -46,12 +33,16 @@ def validate_weather_data(weather: dict) -> bool:
     except (ValueError, TypeError):
         return False
 
+    # Validate temperature range in Celsius
     if not (-90 <= temp <= 60):
         return False
+    # Validate humidity percentage range
     if not (0 <= humidity <= 100):
         return False
+    # Validate atmospheric pressure range in hPa
     if not (800 <= pressure <= 1100):
         return False
+    # Validate wind speed is non-negative
     if wind < 0:
         return False
 

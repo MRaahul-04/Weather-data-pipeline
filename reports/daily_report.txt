@@ -4,25 +4,35 @@ WEATHER DATA PIPELINE SYSTEM
 📊 SYSTEM STATUS
 ----------------
 Status: SUCCESS
-Last Run Start: 28 Feb 2026, 04:54 PM IST
-Last Run End: 28 Feb 2026, 04:54 PM IST
+Last Run Start: 28 Feb 2026, 06:24 PM IST
+Last Run End: 28 Feb 2026, 06:24 PM IST
 Records Processed: 9
 Last Error: None
 
 🌤️ CURRENT WEATHER SNAPSHOT
 ----------------------------
-📍 Ahmedabad: 32.81°C, 22% humidity, clear sky
-📍 Bangalore: 31.67°C, 23% humidity, clear sky
-📍 Chennai: 28.01°C, 57% humidity, few clouds
-📍 Delhi: 32.37°C, 12% humidity, clear sky
-📍 Hyderabad: 33.04°C, 23% humidity, broken clouds
-📍 Jaipur: 29.68°C, 22% humidity, scattered clouds
-📍 Kolkata: 32.99°C, 13% humidity, clear sky
-📍 Mumbai: 26.12°C, 55% humidity, clear sky
-📍 Pune: 31.65°C, 20% humidity, clear sky
+📍 Ahmedabad: 30.25°C, 27% humidity, clear sky
+📍 Bangalore: 28.83°C, 26% humidity, broken clouds
+📍 Chennai: 26.23°C, 70% humidity, clear sky
+📍 Delhi: 29.14°C, 14% humidity, clear sky
+📍 Hyderabad: 30.33°C, 27% humidity, clear sky
+📍 Jaipur: 25.73°C, 27% humidity, scattered clouds
+📍 Kolkata: 27.89°C, 19% humidity, clear sky
+📍 Mumbai: 26.01°C, 58% humidity, clear sky
+📍 Pune: 27.59°C, 31% humidity, clear sky
 
 📅 TODAY'S ALERTS
 -----------------
+• HIGH_TEMPERATURE alert: Ahmedabad (30.25 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (30.33 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (30.33 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (30.25 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (30.25 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (30.33 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (30.33 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (30.25 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (30.25 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (30.33 > 30.0)
 • HIGH_TEMPERATURE alert: Ahmedabad (32.81 > 30.0)
 • HIGH_TEMPERATURE alert: Pune (31.65 > 30.0)
 • HIGH_TEMPERATURE alert: Hyderabad (33.04 > 30.0)
@@ -62,15 +72,15 @@ Last Error: None
 
 📊 DATABASE STATISTICS
 ---------------------
-Total Records: 205
+Total Records: 250
 Cities Tracked: 9
-Average Temperature: 27.26 °C
+Average Temperature: 27.39 °C
 
 🔥 HOTTEST CITY (LONG-TERM)
 --------------------------
 City: Ahmedabad
-Average Temperature: 29.78 °C
+Average Temperature: 29.87 °C
 
 ⏰ REPORT GENERATED AT
 ---------------------
-28 Feb 2026, 04:54 PM IST
+28 Feb 2026, 06:24 PM IST
