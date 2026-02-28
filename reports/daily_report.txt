@@ -4,50 +4,73 @@ WEATHER DATA PIPELINE SYSTEM
 📊 SYSTEM STATUS
 ----------------
 Status: SUCCESS
-Last Run Start: 24 Feb 2026, 11:45 PM IST
-Last Run End: 24 Feb 2026, 11:45 PM IST
+Last Run Start: 28 Feb 2026, 04:54 PM IST
+Last Run End: 28 Feb 2026, 04:54 PM IST
 Records Processed: 9
 Last Error: None
 
 🌤️ CURRENT WEATHER SNAPSHOT
 ----------------------------
-📍 Ahmedabad: 26.85°C, 24% humidity, scattered clouds
-📍 Bangalore: 22.73°C, 60% humidity, broken clouds
-📍 Chennai: 25.7°C, 82% humidity, scattered clouds
-📍 Delhi: 23.78°C, 20% humidity, clear sky
-📍 Hyderabad: 24.95°C, 49% humidity, overcast clouds
-📍 Jaipur: 20.22°C, 28% humidity, clear sky
-📍 Kolkata: 23.19°C, 62% humidity, light rain
-📍 Mumbai: 26.08°C, 70% humidity, broken clouds
-📍 Pune: 23.21°C, 42% humidity, scattered clouds
+📍 Ahmedabad: 32.81°C, 22% humidity, clear sky
+📍 Bangalore: 31.67°C, 23% humidity, clear sky
+📍 Chennai: 28.01°C, 57% humidity, few clouds
+📍 Delhi: 32.37°C, 12% humidity, clear sky
+📍 Hyderabad: 33.04°C, 23% humidity, broken clouds
+📍 Jaipur: 29.68°C, 22% humidity, scattered clouds
+📍 Kolkata: 32.99°C, 13% humidity, clear sky
+📍 Mumbai: 26.12°C, 55% humidity, clear sky
+📍 Pune: 31.65°C, 20% humidity, clear sky
 
 📅 TODAY'S ALERTS
 -----------------
-• HIGH_HUMIDITY alert: Chennai (82.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (83.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
-• HIGH_HUMIDITY alert: Chennai (81.0 > 75.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (32.81 > 30.0)
+• HIGH_TEMPERATURE alert: Pune (31.65 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (33.04 > 30.0)
+• HIGH_TEMPERATURE alert: Kolkata (32.99 > 30.0)
+• HIGH_TEMPERATURE alert: Bangalore (31.67 > 30.0)
+• HIGH_TEMPERATURE alert: Delhi (32.37 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (32.81 > 30.0)
+• HIGH_TEMPERATURE alert: Pune (31.65 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (33.04 > 30.0)
+• HIGH_TEMPERATURE alert: Kolkata (32.99 > 30.0)
+• HIGH_TEMPERATURE alert: Bangalore (31.67 > 30.0)
+• HIGH_TEMPERATURE alert: Delhi (32.37 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (32.81 > 30.0)
+• HIGH_TEMPERATURE alert: Pune (31.65 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (33.04 > 30.0)
+• HIGH_TEMPERATURE alert: Kolkata (32.99 > 30.0)
+• HIGH_TEMPERATURE alert: Bangalore (31.67 > 30.0)
+• HIGH_TEMPERATURE alert: Delhi (32.37 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (32.83 > 30.0)
+• HIGH_TEMPERATURE alert: Pune (32.39 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (33.17 > 30.0)
+• HIGH_TEMPERATURE alert: Kolkata (33.71 > 30.0)
+• HIGH_TEMPERATURE alert: Bangalore (31.78 > 30.0)
+• HIGH_TEMPERATURE alert: Delhi (32.83 > 30.0)
+• HIGH_TEMPERATURE alert: Pune (32.39 > 30.0)
+• HIGH_TEMPERATURE alert: Kolkata (33.71 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (33.17 > 30.0)
+• HIGH_TEMPERATURE alert: Delhi (32.83 > 30.0)
+• HIGH_TEMPERATURE alert: Bangalore (31.78 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (32.83 > 30.0)
+• HIGH_TEMPERATURE alert: Ahmedabad (32.83 > 30.0)
+• HIGH_TEMPERATURE alert: Pune (32.39 > 30.0)
+• HIGH_TEMPERATURE alert: Hyderabad (33.17 > 30.0)
+• HIGH_TEMPERATURE alert: Kolkata (33.71 > 30.0)
+• HIGH_TEMPERATURE alert: Bangalore (31.78 > 30.0)
+• HIGH_TEMPERATURE alert: Delhi (32.83 > 30.0)
 
 📊 DATABASE STATISTICS
 ---------------------
-Total Records: 117
+Total Records: 205
 Cities Tracked: 9
-Average Temperature: 24.53 °C
+Average Temperature: 27.26 °C
 
 🔥 HOTTEST CITY (LONG-TERM)
 --------------------------
 City: Ahmedabad
-Average Temperature: 27.74 °C
+Average Temperature: 29.78 °C
 
 ⏰ REPORT GENERATED AT
 ---------------------
-24 Feb 2026, 11:45 PM IST
+28 Feb 2026, 04:54 PM IST

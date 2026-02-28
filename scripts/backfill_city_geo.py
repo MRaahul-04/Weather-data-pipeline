@@ -1,3 +1,20 @@
+"""
+backfill_city_geo.py
+--------------------------------------------------
+Purpose:
+    Backfill missing geographic metadata (country, latitude, longitude)
+    for cities stored in the database using the OpenWeather API.
+
+When to run:
+    - After initial database creation
+    - If cities table contains NULL latitude / longitude values
+    - During first-time setup or data repair
+
+Behavior:
+    - Fetches all cities with missing geo information
+    - Calls OpenWeather API for each city
+"""
+
 import os
 import requests
 from src.database import get_connection

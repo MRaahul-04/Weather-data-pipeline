@@ -140,9 +140,8 @@ if __name__ == "__main__":
         # -----------------------------
         # DATABASE CHECK
         # -----------------------------
-        print("\n============="
-              "🗄 DATABASE"
-              "==============")
+        print("▶ 🗄 DATABASE"
+              "\n------------------------")
         if DB_PATH.exists():
             done("Database already exists")
         else:
@@ -154,9 +153,8 @@ if __name__ == "__main__":
         # -----------------------------
         # CITY GEO ENRICHMENT (SAFE)
         # -----------------------------
-        print("\n======="
-                "🌍 CITY GEO ENRICHMENT"
-                "========")
+        print("\n🌍 CITY GEO ENRICHMENT"
+              "\n------------------------")
 
         if city_geo_missing():
             if api_key_available():
@@ -173,9 +171,8 @@ if __name__ == "__main__":
         # -----------------------------
         # ETL PIPELINE
         # -----------------------------
-        print("\n==========="
-              "🔄 ETL PIPELINE"
-              "===========")
+        print("\n🔄 ETL PIPELINE"
+              "\n------------------------")
         run_once(
             [PYTHON, SCRIPTS_DIR / "run_pipeline.py"],
             "Initial ETL pipeline run",
@@ -184,9 +181,8 @@ if __name__ == "__main__":
         # -----------------------------
         # SCHEDULER
         # -----------------------------
-        print("\n============="
-              "⏱ SCHEDULER"
-              "=============")
+        print("\n⏱ SCHEDULER"
+              "\n------------------------")
         start_background(
             [PYTHON, SRC_DIR / "scheduler.py"],
             "Weather data scheduler",
@@ -195,9 +191,8 @@ if __name__ == "__main__":
         # -----------------------------
         # REPORTING
         # -----------------------------
-        print("\n============="
-              "📄 REPORTING"
-              "============")
+        print("\n📄 REPORTING"
+              "\n------------------------")
         run_once(
             [PYTHON, SRC_DIR / "reporter.py"],
             "Daily report generation",
