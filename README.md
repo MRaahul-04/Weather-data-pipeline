@@ -367,37 +367,37 @@ This will:
 
 ## 📸 Screenshots & Visual Evidence
 
-### 🖥️ CLI System Startup
 
-![CLI Startup](docs/screenshots/run_app_status.png)
+### 📊 System Startup & Dashboard
 
----
-
-### 📊 CLI Dashboard startup
-
-
-![Dashboard startup](docs/screenshots/streamlit_dashboard_Status.png)
+<p align="center">
+  <img src="docs/screenshots/run_app_status.png" width="45%" />
+  <img src="docs/screenshots/streamlit_dashboard_Status.png" width="45%" />
+</p>
 
 ---
 
-### 📊 Dashboard Overview
+### 📊 Dashboard & Analytics Overview
 
+<table>
+  <tr>
+    <td align="center">
+      <b>📊 Dashboard Overview</b><br>
+      <img src="docs/screenshots/dashboard_overview.png" width="90%"/>
+    </td>
+    <td align="center">
+      <b>📈 City-wise Weather Trends</b><br>
+      <img src="docs/screenshots/weather_City_specific_trends.png" width="90%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <b>🚨 Alerts Visualization</b><br>
+      <img src="docs/screenshots/recent_alerts.png" width="60%"/>
+    </td>
+  </tr>
+</table>
 
-![Dashboard Overview](docs/screenshots/dashboard_overview.png)
-
----
-
-
-### 📈 City-wise Weather Trends
-
-
-![Weather Trends](docs/screenshots/weather_City_specific_trends.png)
-
----
-
-### 🚨 Alerts Visualization
-
-![Dashboard Alerts](docs/screenshots/recent_alerts.png)
 ---
 
 ### 📄 Generated Reports
@@ -412,14 +412,13 @@ reports/
 ---
 #### TXT Report
 
-
 ![Daily TXT Report](docs/screenshots/text_report.png)
 
 
 #### CSV Report
 
-
 ![Daily CSV Report](docs/screenshots/csv_report.png)
+
 
 Reports include:
 
