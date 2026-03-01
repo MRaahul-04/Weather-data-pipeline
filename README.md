@@ -55,7 +55,7 @@ Streamlit Dashboard
 ```
 
 📘 Detailed architecture diagrams and explanations are available here:
-👉 **docs/documentation.md**
+👉 **docs/database_schema.md**
 
 ---
 
@@ -157,7 +157,7 @@ Weather-data-pipeline/
 │   └── daily_report.csv
 │
 ├── docs/
-│   ├── documentation.md
+│   ├── database_schema.md
 │   ├── diagrams/
 │   └── screenshots/
 │
