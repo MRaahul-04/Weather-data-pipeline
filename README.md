@@ -55,7 +55,7 @@ Streamlit Dashboard
 ```
 
 📘 Detailed architecture diagrams and explanations are available here:
-👉 **docs/documentation.md**
+👉 **docs/database_schema.md**
 
 ---
 
