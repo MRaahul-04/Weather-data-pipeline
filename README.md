@@ -157,7 +157,7 @@ Weather-data-pipeline/
 │   └── daily_report.csv
 │
 ├── docs/
-│   ├── documentation.md
+│   ├── database_schema.md
 │   ├── diagrams/
 │   └── screenshots/
 │
